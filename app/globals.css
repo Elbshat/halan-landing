@@ -1,21 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
+  html {
+    scroll-padding-top: 160px;
+  }
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #f9f9f4;
+    --foreground: #171717;
+    --c-primary: 219 47% 47%;
+    --c-alt: 40 100% 50%;
+    --c-body: rgba(0, 0, 0, 0.8);
+  }
+
+  h2 {
+    @apply capitalize text-2xl font-extrabold font-jakarta md:font-dmSans md:text-[55px] md:leading-[1.4] md:font-bold md:-tracking-[0.02em];
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .section-paragraph {
+    @apply text-black/80 font-jakarta font-medium text-xl leading-8 md:font-dmSans md:text-[22px] md:leading-normal;
+  }
+
+  .embla {
+    overflow: hidden;
+  }
+  .embla__container {
+    display: flex;
+    column-gap: 20px;
+  }
+  .embla__slide {
+    flex: 0 0 100%;
+    max-width: 305px;
+    min-width: 0;
+    position: relative;
+  }
+  .embla__slide--menu::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #000 0%, #00000000 50%);
+  }
+
+  .embla__slide--testimonial {
+    transition: opacity 0.2s ease-in-out;
+  }
+  .embla__slide--testimonial:not(.is-snapped) {
+    opacity: 0.5;
+  }
+
+  .map__overlay {
+    background: linear-gradient(
+      180deg,
+      #f9f9f4 15%,
+      rgba(255, 255, 255, 0.5) 15%
+    );
+  }
 }
