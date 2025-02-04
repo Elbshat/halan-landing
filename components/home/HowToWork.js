@@ -5,17 +5,17 @@ import FoodIcon from "../icons/FoodIcon";
 
 export default function HowToWork() {
   return (
-    <section id="howToWork" className="max-w-[1368px] mx-auto px-4 space-y-8">
-      <header>
-        <h3 className="text-center text-primary text-xl font-medium md:font-normal leading-8 md:leading-[1.8] md:tracking-tighter">
+    <section id="howToWork" className="mx-auto max-w-[1336px] space-y-8 px-4">
+      <header className="text-center">
+        <h3 className="text-xl font-medium leading-8 text-primary md:font-normal md:leading-[1.8] md:tracking-tighter">
           How to work
         </h3>
-        <h2 className="text-center">
+        <h2 className="main--heading-2">
           From <span className="text-primary">Order to Doorstep</span> in 20
           Minutes
         </h2>
       </header>
-      <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-x-20 place-content-center">
+      <ul className="grid place-content-center gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-20">
         {workItems.map(({ title, description, icon }) => (
           <WorkItem
             key={title}
@@ -34,10 +34,10 @@ function WorkItem({ title, description, icon }) {
   const Icon = icons[icon];
   return (
     <li className="flex flex-col items-center text-center max-md:max-w-sm">
-      <div className="flex items-center justify-center bg-primary/5 w-12 h-12 md:w-32 md:h-28 rounded-[15%] mb-6">
-        <Icon className="w-6 h-6 md:w-12 md:h-12" />
+      <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-[15%] bg-primary/5 md:h-28 md:w-32">
+        <Icon className="h-6 w-6 md:h-12 md:w-12" />
       </div>
-      <h3 className="text-xl font-bold mb-4">{title}</h3>
+      <h3 className="mb-4 text-xl font-bold">{title}</h3>
       <p className="text-xl leading-8 md:leading-[1.8]">{description}</p>
     </li>
   );

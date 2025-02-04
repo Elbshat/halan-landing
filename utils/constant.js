@@ -87,3 +87,24 @@ export const accordionItems = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quis modi ullam amet debitis libero veritatis enim repellat optio natus eum delectus deserunt, odit expedita eos molestiae ipsa totam quidem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quis modi ullam amet debitis libero veritatis enim repellat optio natus eum delectus deserunt, odit expedita eos molestiae ipsa totam quidem?",
   },
 ];
+
+export const aboutArticles = [
+  {
+    icon: "industry",
+    title: "Trusted Across the U.S.A",
+    content:
+      "Proudly serving the Muslim community with halal products, reliability, and care.",
+  },
+  {
+    icon: "one",
+    title: "#1 in Halal Meat Supply",
+    content:
+      "Offering premium halal meats that meet high standards for quality and taste.",
+  },
+  {
+    icon: "cup",
+    title: "A Variety of Products",
+    content:
+      "Supplying halal meats and groceries to simplify your daily shopping needs.",
+  },
+];

@@ -23,28 +23,30 @@ export default function Testimonials() {
   return (
     <section
       id="testimonial"
-      className="py-6  lg:py-32 lg:pl-36 space-y-8  bg-gradient-to-b from-primary from-[27%] to-[#1B2B4A]"
+      className="space-y-8 bg-gradient-to-b from-primary from-[27%] to-[#1B2B4A] py-6 lg:py-32 lg:pl-36"
     >
-      <div className="grid lg:grid-cols-2 gap-6 place-content-center w-full overflow-hidden">
-        <div className="text-white max-lg:text-center max-lg:px-6">
-          <h2 className="mb-4 md:mb-8">
+      <div className="grid w-full place-content-center gap-4 overflow-hidden lg:grid-cols-2 lg:gap-6">
+        <div className="text-white max-lg:px-6 max-lg:text-center">
+          <h2 className="main--heading-2 mb-4 md:mb-8">
             What Are People Saying <span className="text-alt">About</span> Us
           </h2>
-          <p className="text-xl leading-6 md:text-[22px] md:leading-[1.8] md:font-medium">
+          <p className="mb-8 text-xl leading-6 md:text-[22px] md:font-medium md:leading-[1.8]">
             At &quot;Hala Hala&#44;&quot; we value your satisfaction with our
             services and products. Let us share customer reviews with you.
           </p>
-          <p className="hidden lg:flex items-end md:mt-9">
-            <span className="text-2xl md:text-5xl font-extrabold">
+          <p className="hidden items-end lg:flex">
+            <span className="text-2xl font-bold md:text-5xl">
               {currentSlide}
+              &nbsp;
             </span>
-            <span className="text-xl text-[#ccc] ">/{numSlides}</span>
+            <span className="text-xl text-[#ccc]">/{numSlides}</span>
           </p>
-          <div className="hidden lg:flex items-center gap-x-6 mt-6">
+          <div className="mt-6 hidden items-center gap-x-6 lg:flex">
             <button
               onClick={scrollPrev}
-              className="bg-primary grid place-content-center w-10 h-10 md:w-[61px] md:h-[61px] rounded-[11px] transition-colors disabled:bg-primary/20"
+              className="grid h-10 w-10 place-content-center rounded-[11px] bg-primary transition-colors disabled:bg-primary/20 md:h-[61px] md:w-[61px]"
               disabled={!canScrollPrev}
+              aria-label="Previous Slide"
             >
               <svg
                 width="27"
@@ -65,8 +67,9 @@ export default function Testimonials() {
             </button>
             <button
               onClick={scrollNext}
-              className="bg-primary transition-colors disabled:bg-primary/20 grid place-content-center w-10 h-10 md:w-[61px] md:h-[61px] rounded-[11px]"
+              className="grid h-10 w-10 place-content-center rounded-[11px] bg-primary transition-colors disabled:bg-primary/20 md:h-[61px] md:w-[61px]"
               disabled={!canScrollNext}
+              aria-label="Next Slide"
             >
               <svg
                 width="27"
@@ -89,16 +92,17 @@ export default function Testimonials() {
         <div className="overflow-hidden">
           <TestimonialsCarousel slides={testimonials} ref={emblaRef} />
         </div>
-        <p className="flex lg:hidden items-end justify-center md:mt-9 text-white">
-          <span className="text-2xl md:text-5xl font-extrabold">
+        <p className="flex items-end justify-center text-white md:mt-9 lg:hidden">
+          <span className="text-2xl font-extrabold md:text-5xl">
             {currentSlide}
           </span>
-          <span className="text-xl text-[#ccc] ">/{numSlides}</span>
+          <span className="text-xl text-[#ccc]">/{numSlides}</span>
         </p>
-        <div className="flex lg:hidden items-center justify-center gap-x-6 mt-6">
+        <div className="flex items-center justify-center gap-x-6 lg:hidden">
           <button
             onClick={scrollPrev}
-            className="bg-primary grid place-content-center w-10 h-10 md:w-[61px] md:h-[61px] rounded-[11px] transition-colors disabled:bg-primary/20"
+            aria-label="Previous Slide"
+            className="grid h-10 w-10 place-content-center rounded-[11px] bg-primary transition-colors disabled:bg-primary/20 md:h-[61px] md:w-[61px]"
             disabled={!canScrollPrev}
           >
             <svg
@@ -120,8 +124,9 @@ export default function Testimonials() {
           </button>
           <button
             onClick={scrollNext}
-            className="bg-primary transition-colors disabled:bg-primary/20 grid place-content-center w-10 h-10 md:w-[61px] md:h-[61px] rounded-[11px]"
+            className="grid h-10 w-10 place-content-center rounded-[11px] bg-primary transition-colors disabled:bg-primary/20 md:h-[61px] md:w-[61px]"
             disabled={!canScrollNext}
+            aria-label="Next Slide"
           >
             <svg
               width="27"

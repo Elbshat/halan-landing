@@ -22,17 +22,17 @@ export default function TestimonialsCarousel({ slides, ref }) {
 
 function TestimonialItem({ name, quote, rating }) {
   return (
-    <figure className="embla__slide embla__slide--testimonial font-poppins bg-white rounded-lg px-6 py-10">
-      <div aria-hidden className="mb-6">
-        <span className="inline-block w-[61px] h-[61px] rounded-full bg-[#90ACF7]"></span>
+    <figure className="embla__slide embla__slide--testimonial rounded-lg bg-white px-6 py-4 font-poppins lg:py-10">
+      <div aria-hidden className="mb-4 lg:mb-6">
+        <span className="inline-block h-[61px] w-[61px] rounded-full bg-[#90ACF7]"></span>
       </div>
-      <figcaption className="font-medium  text-[26px] leading-9">
+      <figcaption className="text-[26px] font-medium leading-9">
         {name}
       </figcaption>
 
       <RatingComponent rating={rating} />
 
-      <blockquote className="mt-6 text-[#575757]">
+      <blockquote className="mt-4 text-[#575757] lg:mt-6">
         <p className="text-[18px] tracking-tight">{quote}</p>
       </blockquote>
     </figure>

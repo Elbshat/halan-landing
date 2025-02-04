@@ -14,6 +14,11 @@ module.exports = {
         alt: "hsl(var(--c-alt))",
         body: "var(--c-body)",
       },
+      boxShadow: {
+        header:
+          "0 4px 32px 0px rgba(19, 24, 27, 0.03), 0 24px 32px -8px rgba(19, 24, 27, 0.03)",
+        article: "0 52.2px 83.5px -31.3px rgba(35,149,73,0.2) ",
+      },
       fontFamily: {
         openSans: ["var(--font-open-sans)", "Arial", "sans-serif"],
         dmSans: ["var(--font-dm-sans)", "ui-serif", "Georgia"],
@@ -23,6 +28,9 @@ module.exports = {
       },
       backgroundImage: {
         map: "url(/map.png)",
+      },
+      letterSpacing: {
+        xl: "0.16em",
       },
     },
   },

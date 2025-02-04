@@ -8,7 +8,7 @@ import WhyChooseUs from "@/components/home/WhyChooseUs";
 
 export default function Home() {
   return (
-    <main className="mt-40  space-y-24 font-jakarta md:font-dmSans">
+    <main className="mt-32 space-y-24 font-dmSans lg:mt-40">
       <Hero />
 
       <WhyChooseUs />
