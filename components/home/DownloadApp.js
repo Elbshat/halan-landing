@@ -1,4 +1,7 @@
 import Image from "next/image";
+import FireIcon from "../icons/FireIcon";
+import SmileIcon from "../icons/SmileIcon";
+import ToungeIcon from "../icons/ToungeIcon";
 
 export default function DownloadApp() {
   return (
@@ -8,11 +11,11 @@ export default function DownloadApp() {
     >
       <div className="flex flex-col items-center rounded-[30px] bg-primary/25 px-8 py-8 lg:flex-row">
         <div className="w-full text-center lg:w-1/2 lg:text-left">
-          <h4 className="tracking- tracking-xl mb-6 text-lg font-semibold uppercase leading-tight text-primary">
+          <h4 className="tracking- mb-6 text-lg font-semibold uppercase leading-tight tracking-xl text-primary">
             Download App
           </h4>
           <h3 className="mb-6 text-2xl font-extrabold leading-tight md:text-5xl md:leading-tight">
-            Get Started With <span className="text-alt">Halan</span> Today!
+            Get Started With Halan Today!
           </h3>
 
           <p className="mb-8 text-xl font-medium leading-6 text-[#333333]">
@@ -24,7 +27,7 @@ export default function DownloadApp() {
             Get The App
           </button>
         </div>
-        <div className="mt-12 w-full lg:mb-0 lg:w-1/2">
+        <div className="relative mt-12 w-full lg:mb-0 lg:w-1/2">
           <Image
             className="w-full"
             src="/downloadAppHero.png"
@@ -32,10 +35,41 @@ export default function DownloadApp() {
             width={602}
             height={520}
           />
+          <FireIcon className="absolute left-[5%] top-1/2 h-8 w-8 md:h-12 md:w-12 lg:h-16 lg:w-16" />
+          <SmileIcon className="absolute left-[5%] top-[5%] h-4 w-4 md:h-8 md:w-8 lg:h-12 lg:w-12" />
+          <ToungeIcon className="absolute right-[5%] top-[30%] h-4 w-4 md:h-8 md:w-8 lg:h-12 lg:w-12" />
+          <span className="absolute right-[8%] top-[10%] flex flex-col gap-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width={41}
+              height={12}
+              fill="none"
+            >
+              <path
+                fill="hsl(40 ,100% ,50%)"
+                fillRule="evenodd"
+                d="M3.253 1.597A1.917 1.917 0 1 0 .738 4.49l5.787 5.03 1.382 1.202a2 2 0 0 0 2.822-.198l1.202-1.384 1.64-1.884a2 2 0 0 1 2.82-.197l2.831 2.46 1.384 1.203a2 2 0 0 0 2.822-.198L24.63 9.14l1.636-1.881a2 2 0 0 1 2.822-.198l2.828 2.459 1.383 1.202a2 2 0 0 0 2.822-.198l1.202-1.384 2.515-2.892a1.917 1.917 0 1 0-2.893-2.515l-1.203 1.383a2 2 0 0 1-2.821.198l-4.818-4.188a1.2 1.2 0 0 0-1.694.12l-1.726 1.986.001.001v.001l-2.023 2.33a1.407 1.407 0 0 1-1.985.138l-4.662-4.051a2 2 0 0 0-2.821.197l-.38.438-2.46 2.83a2 2 0 0 1-2.822.198L3.253 1.597Z"
+                clipRule="evenodd"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width={41}
+              height={12}
+              fill="none"
+            >
+              <path
+                fill="hsl(219 ,47% ,47%)"
+                fillRule="evenodd"
+                d="M3.253 1.597A1.917 1.917 0 1 0 .738 4.49l5.787 5.03 1.382 1.202a2 2 0 0 0 2.822-.198l1.202-1.384 1.64-1.884a2 2 0 0 1 2.82-.197l2.831 2.46 1.384 1.203a2 2 0 0 0 2.822-.198L24.63 9.14l1.636-1.881a2 2 0 0 1 2.822-.198l2.828 2.459 1.383 1.202a2 2 0 0 0 2.822-.198l1.202-1.384 2.515-2.892a1.917 1.917 0 1 0-2.893-2.515l-1.203 1.383a2 2 0 0 1-2.821.198l-4.818-4.188a1.2 1.2 0 0 0-1.694.12l-1.726 1.986.001.001v.001l-2.023 2.33a1.407 1.407 0 0 1-1.985.138l-4.662-4.051a2 2 0 0 0-2.821.197l-.38.438-2.46 2.83a2 2 0 0 1-2.822.198L3.253 1.597Z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </span>
         </div>
       </div>
       {/* Absolute objects */}
-      <div className="absolute left-1/2 top-1/2 hidden lg:block">
+      <div className="absolute left-1/2 top-1/2 -z-10 hidden lg:block">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

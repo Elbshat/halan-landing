@@ -1,7 +1,7 @@
 import ContactForm from "@/components/contactUs/ContactForm";
 
 export const metadata = {
-  title: "Contact | Halan Halal",
+  title: "Contact",
   description:
     "Get in touch with Halan Halal. We are here to answer your questions and provide you with the best halal food service. Contact us today!",
 };

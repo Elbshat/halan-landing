@@ -2,7 +2,7 @@ import Accordion from "@/components/faqs/Accordion";
 import { accordionItems } from "@/utils/constant";
 
 export const metadata = {
-  title: "FAQ | Halan Halal",
+  title: "FAQ",
   description:
     "Find answers to common questions about Halan Halal's products and services. Learn more about our commitment to providing high-quality halal food.",
 };

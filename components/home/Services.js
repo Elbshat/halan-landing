@@ -24,25 +24,29 @@ export default function Services() {
             Nutritious Meat Delivered Right To Your Doorstep, And Elevate Your
             Health With Every Bite, Hassle-Free.
           </p>
-          <ul className="flex max-w-xl flex-col items-center max-md:gap-y-4 md:flex-row md:justify-between">
-            <li className="flex items-center space-x-3">
-              <Image
-                src="/onlineOrder.png"
-                alt="Online Order Icon"
-                width={34}
-                height={34}
-              />
+          <ul className="mx-auto flex max-w-xl flex-wrap items-center justify-between max-md:gap-4 md:flex-row md:justify-between">
+            <li className="mx-auto flex items-center space-x-3">
+              <div>
+                <Image
+                  src="/orderOnline.svg"
+                  alt="Online Order Icon"
+                  width={40}
+                  height={40}
+                />
+              </div>
               <span className="text-xl font-bold tracking-tight text-[#191919] lg:text-[27px] lg:font-medium lg:leading-[1.8]">
                 Online Order
               </span>
             </li>
-            <li className="flex items-center space-x-3">
-              <Image
-                src="/twentyFourHours.png"
-                alt="24/7 Service Icon"
-                width={34}
-                height={34}
-              />
+            <li className="mx-auto flex items-center space-x-3">
+              <div>
+                <Image
+                  src="/twentyFourHours.svg"
+                  alt="24/7 Service Icon"
+                  width={40}
+                  height={40}
+                />
+              </div>
               <span className="text-xl font-bold leading-[1.8] tracking-tight text-[#191919] lg:text-[27px] lg:font-medium">
                 24/7 Service
               </span>
