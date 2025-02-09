@@ -11,7 +11,10 @@
     --foreground: #171717;
     --c-primary: 219 47% 47%;
     --c-alt: 40 100% 50%;
+    --c-dark: 0 0% 0%;
     --c-body: rgba(0, 0, 0, 0.8);
+    --c-nav: #3e2d2d;
+    --c-mob-p: #323232;
   }
 }
 

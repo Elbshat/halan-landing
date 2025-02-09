@@ -3,26 +3,26 @@ import LogoIcon from "../icons/LogoIcon";
 
 function Footer() {
   return (
-    <footer className="mt-24 py-6 px-4">
-      <div className="max-w-[1368px] mx-auto grid md:grid-cols-2 lg:grid-cols-5 gap-6 justify-between justify-items-center ">
-        <section className="max-lg:col-span-full max-lg:text-center ">
-          <div className="flex items-center gap-x-5 mb-6 max-lg:justify-center">
-            <LogoIcon className="w-10 h-10 md:w-[72px] md:h-[72px]" />
-            <h3 className="font-poppins text-2xl leading-[22.4px] font-semibold">
+    <footer className="mt-24 px-4 py-6">
+      <div className="mx-auto grid max-w-[1368px] justify-between justify-items-center gap-6 md:grid-cols-2 lg:grid-cols-5">
+        <section className="max-lg:col-span-full max-lg:text-center">
+          <div className="mb-6 flex items-center gap-x-5 max-lg:justify-center">
+            <LogoIcon className="h-10 w-10 md:h-[72px] md:w-[72px]" />
+            <h3 className="font-poppins text-2xl font-semibold leading-[22.4px]">
               Halan Halal
             </h3>
           </div>
-          <p className="font-bold text-[#0c0020] lg:font-medium lg:text-[#333333] leading-[30px]">
+          <p className="font-bold leading-[30px] text-[#0c0020] lg:font-medium lg:text-[#333333]">
             Our job is to filling your tummy with delicious food and with fast
             and free delivery.
           </p>
         </section>
 
         <section className="space-y-6 max-lg:text-center">
-          <h4 className="text-sm leading-6 font-bold text-[#0c0020] md:font-semibold md:text-xl md:leading-[22px] md:text-black">
+          <h4 className="text-sm font-bold leading-6 text-[#0c0020] md:text-xl md:font-semibold md:leading-[22px] md:text-black">
             About
           </h4>
-          <ul className="font-medium text-[#75668d] md:leading-[30px] md:text-[#333333] space-y-2">
+          <ul className="space-y-2 font-medium text-[#75668d] md:leading-[30px] md:text-[#333333]">
             <li>
               <Link href="/" className="">
                 About Us
@@ -36,10 +36,10 @@ function Footer() {
           </ul>
         </section>
         <section className="space-y-6 max-lg:text-center">
-          <h4 className="text-sm leading-6 font-bold text-[#0c0020] md:font-semibold md:text-xl md:leading-[22px] md:text-black">
+          <h4 className="text-sm font-bold leading-6 text-[#0c0020] md:text-xl md:font-semibold md:leading-[22px] md:text-black">
             Company
           </h4>
-          <ul className="font-medium text-[#75668d] md:leading-[30px] md:text-[#333333] space-y-2">
+          <ul className="space-y-2 font-medium text-[#75668d] md:leading-[30px] md:text-[#333333]">
             <li>
               <Link href="/" className="">
                 Why Halan Halal?
@@ -53,24 +53,24 @@ function Footer() {
           </ul>
         </section>
         <section className="space-y-6 max-lg:text-center">
-          <h4 className="text-sm leading-6 font-bold text-[#0c0020] md:font-semibold md:text-xl md:leading-[22px] md:text-black">
+          <h4 className="text-sm font-bold leading-6 text-[#0c0020] md:text-xl md:font-semibold md:leading-[22px] md:text-black">
             Support
           </h4>
-          <ul className="font-medium text-[#75668d] md:leading-[30px] md:text-[#333333] space-y-2">
+          <ul className="space-y-2 font-medium text-[#75668d] md:leading-[30px] md:text-[#333333]">
             <li>
               <Link href="/" className="">
                 Feedback
               </Link>
             </li>
             <li>
-              <Link href="/" className="">
+              <Link href="/contactUs" className="">
                 Contact Us
               </Link>
             </li>
           </ul>
         </section>
         <section className="space-y-6 max-lg:text-center">
-          <h4 className="text-sm leading-6 font-bold text-[#0c0020] md:font-semibold md:text-xl md:leading-[22px] md:text-black">
+          <h4 className="text-sm font-bold leading-6 text-[#0c0020] md:text-xl md:font-semibold md:leading-[22px] md:text-black">
             Follow US
           </h4>
           <ul className="flex items-center justify-between space-x-10">
@@ -123,7 +123,7 @@ function Footer() {
           </ul>
         </section>
       </div>
-      <p className="mt-4 text-center font-medium text-sm text-[#75668D]">
+      <p className="mt-4 text-center text-sm font-medium text-[#75668D]">
         &copy;2025 Halan Halal
       </p>
     </footer>

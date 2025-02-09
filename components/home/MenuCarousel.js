@@ -1,6 +1,5 @@
 "use client";
-import useEmblaCarousel from "embla-carousel-react";
-import { useCallback, useState, useEffect } from "react";
+
 import Image from "next/image";
 import OffIcon from "../icons/OffIcon";
 import { menuItems } from "@/utils/constant";

@@ -32,7 +32,7 @@ export default function WhyChooseUs() {
 
 function ArticleItem({ icon, title, content }) {
   return (
-    <article className="hover:shadow-article flex max-w-lg flex-col justify-between space-y-4 rounded-[52px] border border-[#fff0da] bg-white px-8 py-6 transition hover:border-transparent max-md:text-center md:space-y-10">
+    <article className="flex max-w-lg flex-col justify-between space-y-4 rounded-[52px] border border-[#fff0da] bg-white px-8 py-6 transition hover:border-transparent hover:shadow-article max-md:text-center md:space-y-10">
       <div className="justify-center max-md:flex">
         <Image src={`/${icon}.svg`} alt="cup icon" width="128" height="128" />
       </div>

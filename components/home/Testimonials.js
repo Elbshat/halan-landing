@@ -23,7 +23,7 @@ export default function Testimonials() {
   return (
     <section
       id="testimonial"
-      className="space-y-8 bg-gradient-to-b from-primary from-[27%] to-[#1B2B4A] py-6 lg:py-32 lg:pl-36"
+      className="space-y-8 bg-gradient-to-b from-primary from-[27%] to-[#1b2b4a] py-6 lg:py-32 lg:pl-36"
     >
       <div className="grid w-full place-content-center gap-4 overflow-hidden lg:grid-cols-2 lg:gap-6">
         <div className="text-white max-lg:px-6 max-lg:text-center">
