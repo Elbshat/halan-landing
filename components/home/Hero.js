@@ -26,7 +26,12 @@ function Hero() {
               <MobileHero />
             </div>
           </h1>
-          <p className="text-mob-p mt-4 text-center md:text-left md:text-[1.375rem] md:font-medium md:text-black">
+          <p
+            itemProp="description"
+            role="contentinfo"
+            aria-label="Important information"
+            className="mt-4 text-center text-mob-p md:text-left md:text-[1.375rem] md:font-medium md:text-black"
+          >
             We provide fresh halal meat, poultry, fish, and a wide range of
             quality grocery products, offering a complete shopping experience
             for all your needs.

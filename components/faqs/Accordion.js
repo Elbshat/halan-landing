@@ -15,15 +15,15 @@ function Accordion({ items }) {
   };
 
   return (
-    <section className="max-w-[1368px] mx-auto p-4 md:p-10 bg-white rounded-2xl space-y-4">
+    <section className="mx-auto max-w-[1368px] space-y-4 rounded-2xl bg-white p-4 md:p-10">
       {items.map((item, index) => (
         <div
           key={index}
-          className="cursor-pointer border border-[#DBDFD0] rounded-lg pt-2 px-4 space-y-2 md:pt-6 md:px-10 md:space-y-4 overflow-hidden transition-all duration-300 ease-in-out"
+          className="cursor-pointer space-y-2 overflow-hidden rounded-lg border border-[#DBDFD0] px-4 pt-2 transition-all duration-300 ease-in-out md:space-y-4 md:px-10 md:pt-6"
           onClick={() => handleClick(index)}
         >
-          <div className="flex justify-between items-center ">
-            <h3 className="font-bold text-xl">{item.title}</h3>
+          <div className="flex items-center justify-between">
+            <h3 className="text-xl font-bold">{item.title}</h3>
             <span className="text-2xl">
               {activeIndex === index ? "-" : "+"}
             </span>
@@ -39,12 +39,12 @@ function Accordion({ items }) {
               overflow: "hidden", // Important for smooth transitions
             }}
           >
-            <div
-              className="text-[#4f4f4f] pb-2 md:pb-6"
+            <p
+              className="pb-2 text-[#4f4f4f] md:pb-6"
               ref={(el) => (contentRefs.current[index] = el)}
             >
               {item.content}
-            </div>
+            </p>
           </div>
         </div>
       ))}

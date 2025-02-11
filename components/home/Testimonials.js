@@ -31,7 +31,7 @@ export default function Testimonials() {
             What Are People Saying <span className="text-alt">About</span> Us
           </h2>
           <p className="mb-8 text-xl leading-6 md:text-[22px] md:font-medium md:leading-[1.8]">
-            At &quot;Hala Hala&#44;&quot; we value your satisfaction with our
+            At &quot;Halan Hala&#44;&quot; we value your satisfaction with our
             services and products. Let us share customer reviews with you.
           </p>
           <p className="hidden items-end lg:flex">

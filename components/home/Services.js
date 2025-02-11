@@ -9,7 +9,8 @@ export default function Services() {
             src="/services.png"
             width={622}
             height={615}
-            alt="service section hero"
+            alt="Mobile app contains halal products and services"
+            priority
           />
           <div className="absolute -left-4 bottom-0 -z-10 h-1/2 w-full rounded-full bg-primary/40 blur-[270px]"></div>
         </div>
@@ -19,7 +20,12 @@ export default function Services() {
             Always ready to serve you with{" "}
             <span className="capitalize text-primary">best</span>
           </h2>
-          <p className="section-paragraph mb-8 md:mb-12">
+          <p
+            itemProp="description"
+            role="contentinfo"
+            aria-label="Important sammary"
+            className="section-paragraph mb-8 md:mb-12"
+          >
             Always Here To Serve You With The Best Halal Meat. Enjoy Fresh And
             Nutritious Meat Delivered Right To Your Doorstep, And Elevate Your
             Health With Every Bite, Hassle-Free.

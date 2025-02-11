@@ -10,7 +10,7 @@ export const workItems = [
   {
     title: "CHOOSE",
     description:
-      'At "Halal Halal," we offer you a unique experience through our mobile app, where you can easily order your favorite food and set your location, and we\'ll deliver your meal directly to you.',
+      'At "Halan Halal," we offer you a unique experience through our mobile app, where you can easily order your favorite food and set your location, and we\'ll deliver your meal directly to you.',
     icon: "CartIcon",
   },
   {
@@ -32,31 +32,31 @@ export const testimonials = [
     name: "Selena Gomz",
     rating: "4.8",
     quote:
-      '"Hala Hala has completely transformed the way I eat halal! Their diverse menu options make it easy to find something delicious and nutritious every time."',
+      '"Halan Hala has completely transformed the way I eat halal! Their diverse menu options make it easy to find something delicious and nutritious every time."',
   },
   {
     name: "Selena Gomz",
     rating: "4.8",
     quote:
-      '"Hala Hala has completely transformed the way I eat halal! Their diverse menu options make it easy to find something delicious and nutritious every time."',
+      '"Halan Hala has completely transformed the way I eat halal! Their diverse menu options make it easy to find something delicious and nutritious every time."',
   },
   {
     name: "Selena Gomz",
     rating: "4.8",
     quote:
-      '"Hala Hala has completely transformed the way I eat halal! Their diverse menu options make it easy to find something delicious and nutritious every time."',
+      '"Halan Hala has completely transformed the way I eat halal! Their diverse menu options make it easy to find something delicious and nutritious every time."',
   },
   {
     name: "Selena Gomz",
     rating: "4.8",
     quote:
-      '"Hala Hala has completely transformed the way I eat halal! Their diverse menu options make it easy to find something delicious and nutritious every time."',
+      '"Halan Hala has completely transformed the way I eat halal! Their diverse menu options make it easy to find something delicious and nutritious every time."',
   },
   {
     name: "Selena Gomz",
     rating: "3.8",
     quote:
-      '"Hala Hala has completely transformed the way I eat halal! Their diverse menu options make it easy to find something delicious and nutritious every time."',
+      '"Halan Hala has completely transformed the way I eat halal! Their diverse menu options make it easy to find something delicious and nutritious every time."',
   },
 ];
 

@@ -9,7 +9,6 @@ function HeroImage() {
         height="604"
         alt="Hero image"
         priority
-        className=""
       />
 
       <span aria-hidden="true" className="absolute left-8 top-10 size-20">
@@ -58,7 +57,7 @@ function HeroImage() {
 
       <span
         aria-hidden="true"
-        className="shadow-light absolute bottom-8 left-3 z-10 flex items-center justify-between gap-2 rounded-full bg-white px-5 py-3"
+        className="absolute bottom-8 left-3 z-10 flex items-center justify-between gap-2 rounded-full bg-white px-5 py-3 shadow-light"
       >
         <span className="flex size-10">
           <svg

@@ -10,7 +10,12 @@ export default function WhyChooseUs() {
           <br />
           <span className="text-primary">Halal</span> Products?
         </h2>
-        <p className="flex-1 text-xl font-bold leading-8 text-body md:text-[22px] md:leading-snug">
+        <p
+          itemProp="description"
+          role="contentinfo"
+          aria-label="Important information"
+          className="flex-1 text-xl font-bold leading-8 text-body md:text-[22px] md:leading-snug"
+        >
           We are committed to providing the highest quality halal meats and a
           diverse range of grocery products, ensuring adherence to Islamic
           principles and delivering the exceptional quality you deserve.
@@ -34,12 +39,17 @@ function ArticleItem({ icon, title, content }) {
   return (
     <article className="flex max-w-lg flex-col justify-between space-y-4 rounded-[52px] border border-[#fff0da] bg-white px-8 py-6 transition hover:border-transparent hover:shadow-article max-md:text-center md:space-y-10">
       <div className="justify-center max-md:flex">
-        <Image src={`/${icon}.svg`} alt="cup icon" width="128" height="128" />
+        <Image src={`/${icon}.svg`} alt={title} width="128" height="128" />
       </div>
 
       <div className="space-y-4 md:space-y-2">
         <h3 className="mb-4 text-2xl font-bold leading-[1.8]">{title}</h3>
-        <p className="text-xl leading-[1.8] tracking-tighter text-[#575757]">
+        <p
+          itemProp="description"
+          role="contentinfo"
+          aria-label="Important information"
+          className="text-xl leading-[1.8] tracking-tighter text-[#575757]"
+        >
           {content}
         </p>
       </div>

@@ -38,7 +38,14 @@ function WorkItem({ title, description, icon }) {
         <Icon className="h-6 w-6 md:h-12 md:w-12" />
       </div>
       <h3 className="mb-4 text-xl font-bold">{title}</h3>
-      <p className="text-xl leading-8 md:leading-[1.8]">{description}</p>
+      <p
+        itemProp="description"
+        role="contentinfo"
+        aria-label="Important information"
+        className="text-xl leading-8 md:leading-[1.8]"
+      >
+        {description}
+      </p>
     </li>
   );
 }

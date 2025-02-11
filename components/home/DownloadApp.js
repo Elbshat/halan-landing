@@ -18,7 +18,12 @@ export default function DownloadApp() {
             Get Started With Halan Today!
           </h3>
 
-          <p className="mb-8 text-xl font-medium leading-6 text-[#333333]">
+          <p
+            itemProp="description"
+            role="contentinfo"
+            aria-label="Important information"
+            className="mb-8 text-xl font-medium leading-6 text-[#333333]"
+          >
             Discover food wherever and whenever and get your food delivered
             quickly.
           </p>
