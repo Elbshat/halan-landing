@@ -43,7 +43,7 @@ function ArticleItem({ icon, title, content }) {
   const Icon = Icons[icon];
   return (
     <article className="flex max-w-lg flex-col items-center justify-between space-y-4 rounded-[52px] border border-[#fff0da] bg-white px-8 py-6 text-center transition hover:border-transparent hover:shadow-article md:items-start md:space-y-10 md:text-start">
-      <Icon className="h-32 w-32" aria-label={icon} />
+      <Icon className="h-32 w-32" />
 
       <div className="space-y-4 md:space-y-2">
         <h3 className="mb-4 text-2xl font-bold leading-[1.8]">{title}</h3>
