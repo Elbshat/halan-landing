@@ -70,7 +70,7 @@ export default function MenuCarousel() {
 function MenuItem({ src, label, price, discount }) {
   return (
     <figure className="embla__slide embla__slide--menu overflow-hidden rounded-lg">
-      <Image src={src} width="305" height="360" alt={label} />
+      <Image src={src} width="305" height="360" alt={label} loading="lazy" />
       <figcaption className="absolute bottom-0 z-10 flex w-full items-center justify-between p-6 text-white">
         <h3 className="font-nunito text-xl leading-[1]">
           {label.toUpperCase()}

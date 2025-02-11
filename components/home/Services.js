@@ -10,7 +10,7 @@ export default function Services() {
             width={622}
             height={615}
             alt="Mobile app contains halal products and services"
-            priority
+            loading="lazy"
           />
           <div className="absolute -left-4 bottom-0 -z-10 h-1/2 w-full rounded-full bg-primary/40 blur-[270px]"></div>
         </div>

@@ -38,13 +38,13 @@ function Hero() {
           </p>
           <div className="mx-auto mt-8 grid max-w-[80%] gap-4 md:max-w-full lg:grid-cols-2">
             <DownloadButton
-              href="#"
+              href="https://play.google.com/store/apps/details?id=com.halanhalal.app"
               icon={GooglePlayIcon}
               label="get it on"
               store="Google Play"
             />
             <DownloadButton
-              href="#"
+              href="https://apps.apple.com/us/app/halan-halal/id123456789"
               icon={AppleIcon}
               label="Download on the"
               store="App Store"

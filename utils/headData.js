@@ -1,7 +1,7 @@
 export const data = {
   title: "Halan Halal",
   author: "Halan Halal",
-  url: process.env.NEXT_PUBLIC_BASE_URL,
+  url: "https://halanhalal.com",
   newsKeywords: "Relevant, Specific, Keywords",
   description:
     "Welcome to Halan Halal - Your trusted source for premium halal food. Discover our wide range of delicious and authentic halal products, crafted with care and quality.",

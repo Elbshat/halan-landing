@@ -90,19 +90,19 @@ export const accordionItems = [
 
 export const aboutArticles = [
   {
-    icon: "industry",
+    icon: "IndustryIcon",
     title: "Trusted Across the U.S.A",
     content:
       "Proudly serving the Muslim community with halal products, reliability, and care.",
   },
   {
-    icon: "one",
+    icon: "OneIcon",
     title: "#1 in Halal Meat Supply",
     content:
       "Offering premium halal meats that meet high standards for quality and taste.",
   },
   {
-    icon: "cup",
+    icon: "CupIcon",
     title: "A Variety of Products",
     content:
       "Supplying halal meats and groceries to simplify your daily shopping needs.",

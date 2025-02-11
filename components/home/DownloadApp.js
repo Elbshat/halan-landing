@@ -2,6 +2,7 @@ import Image from "next/image";
 import FireIcon from "../icons/FireIcon";
 import SmileIcon from "../icons/SmileIcon";
 import ToungeIcon from "../icons/ToungeIcon";
+import Link from "next/link";
 
 export default function DownloadApp() {
   return (
@@ -28,9 +29,12 @@ export default function DownloadApp() {
             quickly.
           </p>
 
-          <button className="inline-flex h-12 items-center justify-center whitespace-nowrap rounded-full bg-primary px-10 py-2 text-lg font-medium leading-tight text-white transition hover:bg-primary/95 hover:shadow-md focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 md:h-16">
+          <Link
+            href="https://apps.apple.com/us/app/halan-halal/id123456789"
+            className="inline-flex h-12 items-center justify-center whitespace-nowrap rounded-full bg-primary px-10 py-2 text-lg font-medium leading-tight text-white transition hover:bg-primary/95 hover:shadow-md focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 md:h-16"
+          >
             Get The App
-          </button>
+          </Link>
         </div>
         <div className="relative mt-12 w-full lg:mb-0 lg:w-1/2">
           <Image
@@ -39,6 +43,7 @@ export default function DownloadApp() {
             alt="App Mockup"
             width={602}
             height={520}
+            loading="lazy"
           />
           <FireIcon className="absolute left-[5%] top-1/2 h-8 w-8 md:h-12 md:w-12 lg:h-16 lg:w-16" />
           <SmileIcon className="absolute left-[5%] top-[5%] h-4 w-4 md:h-8 md:w-8 lg:h-12 lg:w-12" />

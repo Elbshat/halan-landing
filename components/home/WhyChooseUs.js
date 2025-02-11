@@ -1,5 +1,8 @@
 import { aboutArticles } from "@/utils/constant";
 import Image from "next/image";
+import CupIcon from "../icons/CupIcon";
+import OneIcon from "../icons/OneIcon";
+import IndustryIcon from "../icons/IndustryIcon";
 
 export default function WhyChooseUs() {
   return (
@@ -36,11 +39,11 @@ export default function WhyChooseUs() {
 }
 
 function ArticleItem({ icon, title, content }) {
+  const Icons = { CupIcon, OneIcon, IndustryIcon };
+  const Icon = Icons[icon];
   return (
-    <article className="flex max-w-lg flex-col justify-between space-y-4 rounded-[52px] border border-[#fff0da] bg-white px-8 py-6 transition hover:border-transparent hover:shadow-article max-md:text-center md:space-y-10">
-      <div className="justify-center max-md:flex">
-        <Image src={`/${icon}.svg`} alt={title} width="128" height="128" />
-      </div>
+    <article className="flex max-w-lg flex-col items-center justify-between space-y-4 rounded-[52px] border border-[#fff0da] bg-white px-8 py-6 text-center transition hover:border-transparent hover:shadow-article md:items-start md:space-y-10 md:text-start">
+      <Icon className="h-32 w-32" aria-label={icon} />
 
       <div className="space-y-4 md:space-y-2">
         <h3 className="mb-4 text-2xl font-bold leading-[1.8]">{title}</h3>
