@@ -1,39 +1,53 @@
+"use client";
 import Link from "next/link";
 
 import PhoneIcon from "../icons/PhoneIcon";
+import useScroll from "@/hooks/useScroll";
 
 function MobileNav({ className, setIsMobileMenuOpen }) {
+  const { scrollToSection } = useScroll();
+
+  const handleClick = (id) => {
+    scrollToSection(id);
+    setIsMobileMenuOpen(false);
+  };
   return (
     <div className={className}>
       <div className="mx-8 mb-16 font-bold">
         <nav
-          className="my-10 flex flex-col space-y-6"
+          className="my-10 flex flex-col items-start space-y-6"
           aria-label="mobile navbar"
         >
-          <Link href="/#about" className="transition-colors hover:text-primary">
-            <span onClick={() => setIsMobileMenuOpen(false)}>About Us</span>
-          </Link>
-          <Link href="/#menu" className="transition-colors hover:text-primary">
-            <span onClick={() => setIsMobileMenuOpen(false)}>Menu</span>
-          </Link>
-          <Link
-            href="/#services"
+          <button
+            onClick={() => handleClick("about")}
             className="transition-colors hover:text-primary"
           >
-            <span onClick={() => setIsMobileMenuOpen(false)}>Services</span>
-          </Link>
-          <Link
-            href="/#howToWork"
+            About Us
+          </button>
+          <button
+            onClick={() => handleClick("menu")}
             className="transition-colors hover:text-primary"
           >
-            <span onClick={() => setIsMobileMenuOpen(false)}>How to Work?</span>
-          </Link>
-          <Link
-            href="/#downloadApp"
+            Menu
+          </button>
+          <button
+            onClick={() => handleClick("services")}
             className="transition-colors hover:text-primary"
           >
-            <span onClick={() => setIsMobileMenuOpen(false)}>Download App</span>
-          </Link>
+            Services
+          </button>
+          <button
+            onClick={() => handleClick("howToWork")}
+            className="transition-colors hover:text-primary"
+          >
+            How to Work?
+          </button>
+          <button
+            onClick={() => handleClick("downloadApp")}
+            className="transition-colors hover:text-primary"
+          >
+            Download App
+          </button>
         </nav>
 
         <div className="mx-auto grid max-w-[296px]">

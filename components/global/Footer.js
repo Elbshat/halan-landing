@@ -1,7 +1,11 @@
+"use client";
 import Link from "next/link";
 import LogoIcon from "../icons/LogoIcon";
+import useScroll from "@/hooks/useScroll";
 
 function Footer() {
+  const { scrollToSection } = useScroll();
+
   return (
     <footer className="mt-24 px-4 py-6">
       <div className="mx-auto grid max-w-[1368px] justify-between justify-items-center gap-6 md:grid-cols-2 lg:grid-cols-5">
@@ -27,9 +31,9 @@ function Footer() {
           </h4>
           <ul className="space-y-2 font-medium text-[#75668d] md:leading-[30px] md:text-[#333333]">
             <li>
-              <Link href="/#about" className="">
+              <button onClick={() => scrollToSection("about")} className="">
                 About Us
-              </Link>
+              </button>
             </li>
             <li>
               <Link href="/" className="">
