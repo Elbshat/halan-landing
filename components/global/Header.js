@@ -60,7 +60,7 @@ function Header() {
 
         <nav
           aria-label="main navbar"
-          className="hidden items-center gap-3 font-openSans text-sm font-bold leading-[1.4] text-nav md:flex lg:gap-4 lg:text-[18px] lg:font-semibold xl:gap-6"
+          className="hidden items-center gap-3 font-openSans text-sm font-bold leading-[1.4] text-nav min-[810px]:flex lg:gap-4 lg:text-[18px] lg:font-semibold xl:gap-6"
         >
           <button
             onClick={() => scrollToSection("about")}
