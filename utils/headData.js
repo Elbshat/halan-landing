@@ -46,6 +46,19 @@ export const meta = {
       index: true,
       follow: true,
     },
+    yandex: {
+      index: true,
+      follow: true,
+    },
+    slurp: {
+      // Yahoo's bot
+      index: true,
+      follow: true,
+    },
+    duckduckbot: {
+      index: true,
+      follow: true,
+    },
   },
   alternates: {
     canonical: data.url,
@@ -81,11 +94,13 @@ export const jsonLdSchema = {
           "@type": "ImageObject",
           url: "https://halanhalal.com/logo.png",
         },
-        foundingDate: "2024",
+        foundingDate: "2025",
         foundingLocation: "United States",
         contactPoint: {
           "@type": "ContactPoint",
           contactType: "Customer Service",
+          telephone: "+1-800-HALAL",
+          availableLanguage: ["English"],
           email: "support@halanhalal.com",
         },
       },
@@ -95,6 +110,11 @@ export const jsonLdSchema = {
       name: "Halan Halal",
       operatingSystem: "iOS, Android",
       applicationCategory: "Halal Food",
+      description:
+        "Discover authentic Halal food across the United States - Your trusted Halal food finder app",
+      isPartOf: {
+        "@id": "https://halanhalal.com",
+      },
       about: {
         "@type": "MobileApplication",
         name: "Halan Halal",
@@ -151,6 +171,27 @@ export const jsonLdSchema = {
         "@type": "Country",
         name: "United States",
       },
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is Halal food?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Halal food refers to foods that are permissible according to Islamic law. This includes properly sourced and prepared meats, vegetables, and other ingredients that meet Islamic dietary guidelines.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do you verify Halal certification?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "We verify Halal certification through recognized Islamic certification bodies and regularly audit restaurants' compliance with Halal standards.",
+          },
+        },
+      ],
     },
   ],
 };

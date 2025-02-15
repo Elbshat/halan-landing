@@ -9,12 +9,12 @@ export default function sitemap() {
     {
       url: "https://halanhalal.com/contactUS",
       lastModified: new Date(2025, 0, 1),
-      priority: 0.8,
+      priority: 0.9,
     },
     {
       url: "https://halanhalal.com/faqs",
       lastModified: new Date(2025, 0, 1),
-      priority: 0.5,
+      priority: 0.9,
     },
   ];
 }
