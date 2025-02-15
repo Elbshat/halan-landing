@@ -4,10 +4,12 @@ import { useState, useEffect } from "react";
 import LogoIcon from "../icons/LogoIcon";
 import PhoneIcon from "../icons/PhoneIcon";
 import MobileNav from "./MobileNav";
+import useScroll from "@/hooks/useScroll";
 
 function Header() {
   const [scroll, setScroll] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { scrollToSection } = useScroll();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -58,32 +60,38 @@ function Header() {
 
         <nav
           aria-label="main navbar"
-          className="text-nav hidden items-center gap-3 font-openSans text-sm font-bold leading-[1.4] md:flex lg:gap-4 lg:text-[18px] lg:font-semibold xl:gap-6"
+          className="hidden items-center gap-3 font-openSans text-sm font-bold leading-[1.4] text-nav md:flex lg:gap-4 lg:text-[18px] lg:font-semibold xl:gap-6"
         >
-          <Link href="/#about" className="transition-colors hover:text-primary">
+          <button
+            onClick={() => scrollToSection("about")}
+            className="transition-colors hover:text-primary"
+          >
             About Us
-          </Link>
-          <Link href="/#menu" className="transition-colors hover:text-primary">
+          </button>
+          <button
+            onClick={() => scrollToSection("menu")}
+            className="transition-colors hover:text-primary"
+          >
             Menu
-          </Link>
-          <Link
-            href="/#services"
+          </button>
+          <button
+            onClick={() => scrollToSection("services")}
             className="transition-colors hover:text-primary"
           >
             Services
-          </Link>
-          <Link
-            href="/#howToWork"
+          </button>
+          <button
+            onClick={() => scrollToSection("howToWork")}
             className="transition-colors hover:text-primary"
           >
             How To Work ?
-          </Link>
-          <Link
-            href="/#downloadApp"
+          </button>
+          <button
+            onClick={() => scrollToSection("downloadApp")}
             className="transition-colors hover:text-primary"
           >
             Download App
-          </Link>
+          </button>
         </nav>
 
         <Link
