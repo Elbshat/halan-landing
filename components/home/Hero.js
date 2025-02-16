@@ -1,8 +1,7 @@
-import Image from "next/image";
 import GooglePlayIcon from "../icons/GooglePlayIcon";
 import AppleIcon from "../icons/AppleIcon";
 import DownloadButton from "../global/DownloadButton";
-import MobileHero from "./HeroMobileImage";
+import HeroMobileImage from "./HeroMobileImage";
 import HeroImage from "./HeroImage";
 
 function Hero() {
@@ -23,7 +22,7 @@ function Hero() {
             <br />
             <span className="text-primary">Halal</span> Products
             <div className="absolute bottom-[15%] right-0 -z-10 w-1/2 object-cover sm:hidden">
-              <MobileHero />
+              <HeroMobileImage />
             </div>
           </h1>
           <p

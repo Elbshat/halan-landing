@@ -8,7 +8,7 @@ export default function DownloadApp() {
   return (
     <section
       id="downloadApp"
-      className="relative mx-auto max-w-[1368px] space-y-8 p-4 font-poppins"
+      className="relative mx-auto max-w-[1368px] space-y-8 p-4"
     >
       <div className="flex flex-col items-center rounded-[30px] bg-primary/25 px-8 py-8 lg:flex-row">
         <div className="w-full text-center lg:w-1/2 lg:text-left">
@@ -31,7 +31,7 @@ export default function DownloadApp() {
 
           <Link
             href="https://apps.apple.com/us/app/halan-halal/id123456789"
-            className="inline-flex h-12 items-center justify-center whitespace-nowrap rounded-full bg-primary px-10 py-2 text-lg font-medium leading-tight text-white transition hover:bg-primary/95 hover:shadow-md focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 md:h-16"
+            className="inline-flex h-12 items-center justify-center whitespace-nowrap rounded-full bg-primary px-10 py-2 font-poppins text-lg font-medium leading-tight text-white transition hover:bg-primary/95 hover:shadow-md focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 md:h-16"
           >
             Get The App
           </Link>

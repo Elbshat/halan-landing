@@ -58,7 +58,7 @@ function HeroMobileImage() {
 
       <span
         aria-hidden="true"
-        className="shadow-light absolute -left-6 bottom-2 flex items-center justify-between gap-2 rounded-full bg-white px-2 py-1"
+        className="absolute -left-6 bottom-2 flex items-center justify-between gap-2 rounded-full bg-white px-2 py-1 shadow-light"
       >
         <span className="flex h-6 w-6">
           <svg
@@ -74,7 +74,9 @@ function HeroMobileImage() {
             />
           </svg>
         </span>
-        <p className="text-sm font-normal text-[#323232]">order complete</p>
+        <p className="font-nunito text-sm font-normal text-[#323232]">
+          Order Complete
+        </p>
       </span>
     </div>
   );

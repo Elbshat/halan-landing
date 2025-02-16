@@ -74,8 +74,8 @@ function HeroImage() {
           </svg>
         </span>
         <p className="font-nunito text-lg font-bold leading-none text-[#323232]">
-          order
-          <br /> complete
+          Order
+          <br /> Complete
         </p>
       </span>
 

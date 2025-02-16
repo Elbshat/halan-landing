@@ -13,9 +13,9 @@ function MobileNav({ className, setIsMobileMenuOpen }) {
   };
   return (
     <div className={className}>
-      <div className="mx-8 mb-16 font-bold">
+      <div className="mx-8 mb-16">
         <nav
-          className="my-10 flex flex-col items-start space-y-6"
+          className="my-10 flex flex-col items-start space-y-6 font-bold"
           aria-label="mobile navbar"
         >
           <button
@@ -53,7 +53,7 @@ function MobileNav({ className, setIsMobileMenuOpen }) {
         <div className="mx-auto grid max-w-[296px]">
           <Link
             href="/contactUs"
-            className="focus-visible:ring-ring inline-flex h-10 items-center justify-center whitespace-nowrap rounded-full bg-primary px-4 font-medium text-white shadow transition hover:bg-primary/95 hover:shadow-md focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 md:h-12 lg:h-14 lg:px-8 lg:text-xl"
+            className="focus-visible:ring-ring inline-flex h-10 items-center justify-center whitespace-nowrap rounded-full bg-primary px-4 font-poppins text-white shadow transition hover:bg-primary/95 hover:shadow-md focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 md:h-12 lg:h-14 lg:px-8 lg:text-xl"
           >
             <span
               onClick={() => setIsMobileMenuOpen(false)}

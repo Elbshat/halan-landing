@@ -1,5 +1,4 @@
 import { aboutArticles } from "@/utils/constant";
-import Image from "next/image";
 import CupIcon from "../icons/CupIcon";
 import OneIcon from "../icons/OneIcon";
 import IndustryIcon from "../icons/IndustryIcon";

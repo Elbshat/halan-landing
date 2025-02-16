@@ -15,9 +15,7 @@ function Footer() {
             className="mb-6 flex items-center gap-x-5 max-lg:justify-center"
           >
             <LogoIcon className="h-10 w-10 md:h-[72px] md:w-[72px]" />
-            <h3 className="font-poppins text-2xl font-semibold leading-[22.4px]">
-              Halan Halal
-            </h3>
+            <h3 className="text-2xl font-bold leading-[22.4px]">Halan Halal</h3>
           </Link>
           <p className="font-bold leading-[30px] text-[#0c0020] lg:font-medium lg:text-[#333333]">
             Our job is to filling your tummy with delicious food and with fast
@@ -29,7 +27,7 @@ function Footer() {
           <h4 className="text-sm font-bold leading-6 text-[#0c0020] md:text-xl md:font-semibold md:leading-[22px] md:text-black">
             About
           </h4>
-          <ul className="space-y-2 font-medium text-[#75668d] md:leading-[30px] md:text-[#333333]">
+          <ul className="space-y-2 font-medium text-[#333333] md:leading-[30px]">
             <li>
               <button onClick={() => scrollToSection("about")} className="">
                 About Us
@@ -46,7 +44,7 @@ function Footer() {
           <h4 className="text-sm font-bold leading-6 text-[#0c0020] md:text-xl md:font-semibold md:leading-[22px] md:text-black">
             Company
           </h4>
-          <ul className="space-y-2 font-medium text-[#75668d] md:leading-[30px] md:text-[#333333]">
+          <ul className="space-y-2 font-medium text-[#333333] md:leading-[30px]">
             <li>
               <Link href="/" className="">
                 Why Halan Halal?
@@ -63,7 +61,7 @@ function Footer() {
           <h4 className="text-sm font-bold leading-6 text-[#0c0020] md:text-xl md:font-semibold md:leading-[22px] md:text-black">
             Support
           </h4>
-          <ul className="space-y-2 font-medium text-[#75668d] md:leading-[30px] md:text-[#333333]">
+          <ul className="space-y-2 font-medium text-[#333333] md:leading-[30px]">
             <li>
               <Link href="/" className="">
                 Feedback
@@ -136,7 +134,7 @@ function Footer() {
           </ul>
         </section>
       </div>
-      <p className="mt-4 text-center text-sm font-medium text-[#75668D]">
+      <p className="mt-4 text-center text-sm font-medium text-[#333333]">
         &copy;2025 Halan Halal
       </p>
     </footer>
