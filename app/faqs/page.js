@@ -14,7 +14,7 @@ function FAQsPage() {
           Questions Looks Here
         </h1>
 
-        <p className="text-[#323231] md:text-xl md:font-medium md:text-[#333333]">
+        <p className="mx-auto max-w-xl text-[#333333] md:text-xl md:font-medium">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the{" "}
         </p>

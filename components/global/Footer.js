@@ -75,6 +75,11 @@ function Footer() {
                 Contact Us
               </Link>
             </li>
+            <li>
+              <Link href="/privacy-policy" className="rounded">
+                Privacy Policy
+              </Link>
+            </li>
           </ul>
         </section>
         <section className="space-y-6 max-lg:text-center">
