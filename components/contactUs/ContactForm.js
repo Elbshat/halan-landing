@@ -4,8 +4,8 @@ import FormInput from "./FormInput";
 
 function ContactForm() {
   return (
-    <form className="space-y-6 p-4 md:p-10 rounded-2xl bg-white shadow-[0_3px_60px_rgba(0,0,0,0.08)]">
-      <div className="flex flex-col md:flex-row gap-4">
+    <form className="space-y-6 rounded-2xl bg-white p-4 shadow-[0_3px_60px_rgba(0,0,0,0.08)] md:p-10">
+      <div className="flex flex-col gap-4 md:flex-row">
         <FormInput
           label="Name"
           type="text"
@@ -39,7 +39,7 @@ function ContactForm() {
 
       <button
         type="submit"
-        className=" w-full h-14 px-8 inline-flex items-center justify-center gap-x-2 whitespace-nowrap rounded-full text-xl font-medium transition focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-white shadow hover:bg-primary/95 hover:shadow-md"
+        className="inline-flex h-14 w-full items-center justify-center gap-x-2 whitespace-nowrap rounded-full bg-primary px-8 text-xl font-medium text-white shadow transition hover:bg-primary/95 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50"
       >
         send
       </button>

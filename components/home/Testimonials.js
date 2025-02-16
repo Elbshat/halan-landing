@@ -25,7 +25,7 @@ export default function Testimonials() {
       id="testimonial"
       className="space-y-8 bg-gradient-to-b from-primary from-[27%] to-[#1b2b4a] py-6 lg:py-32 lg:pl-36"
     >
-      <div className="grid w-full place-content-center gap-4 overflow-hidden lg:grid-cols-2 lg:gap-6">
+      <div className="grid w-full place-content-center gap-4 overflow-hidden py-1 pl-1 lg:grid-cols-2 lg:gap-6">
         <div className="text-white max-lg:px-6 max-lg:text-center">
           <h2 className="main--heading-2 mb-4 md:mb-8">
             What Are People Saying <span className="text-alt">About</span> Us

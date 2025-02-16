@@ -16,6 +16,11 @@
     --c-nav: #3e2d2d;
     --c-mob-p: #323232;
   }
+
+  a:focus-visible,
+  button:focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2;
+  }
 }
 
 @layer components {

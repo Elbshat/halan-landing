@@ -12,7 +12,7 @@ function Footer() {
         <section className="max-lg:col-span-full max-lg:text-center">
           <Link
             href="/"
-            className="mb-6 flex items-center gap-x-5 max-lg:justify-center"
+            className="mb-6 flex items-center gap-x-5 rounded max-lg:justify-center"
           >
             <LogoIcon className="h-10 w-10 md:h-[72px] md:w-[72px]" />
             <h3 className="text-2xl font-bold leading-[22.4px]">Halan Halal</h3>
@@ -29,12 +29,15 @@ function Footer() {
           </h4>
           <ul className="space-y-2 font-medium text-[#333333] md:leading-[30px]">
             <li>
-              <button onClick={() => scrollToSection("about")} className="">
+              <button
+                onClick={() => scrollToSection("about")}
+                className="rounded"
+              >
                 About Us
               </button>
             </li>
             <li>
-              <Link href="/" className="">
+              <Link href="/" className="rounded">
                 Category
               </Link>
             </li>
@@ -46,12 +49,12 @@ function Footer() {
           </h4>
           <ul className="space-y-2 font-medium text-[#333333] md:leading-[30px]">
             <li>
-              <Link href="/" className="">
+              <Link href="/" className="rounded">
                 Why Halan Halal?
               </Link>
             </li>
             <li>
-              <Link href="/faqs" className="">
+              <Link href="/faqs" className="rounded">
                 FAQ
               </Link>
             </li>
@@ -63,12 +66,12 @@ function Footer() {
           </h4>
           <ul className="space-y-2 font-medium text-[#333333] md:leading-[30px]">
             <li>
-              <Link href="/" className="">
+              <Link href="/" className="rounded">
                 Feedback
               </Link>
             </li>
             <li>
-              <Link href="/contactUs" className="">
+              <Link href="/contactUs" className="rounded">
                 Contact Us
               </Link>
             </li>
@@ -80,7 +83,10 @@ function Footer() {
           </h4>
           <ul className="flex items-center justify-between space-x-10">
             <li>
-              <Link href="/">
+              <Link
+                href="/"
+                className="flex items-center justify-center rounded-sm"
+              >
                 <svg
                   width="24"
                   height="24"
@@ -100,7 +106,10 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link
+                href="/"
+                className="flex items-center justify-center rounded-sm"
+              >
                 <svg
                   width="24"
                   height="24"
@@ -116,7 +125,10 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link
+                href="/"
+                className="flex items-center justify-center rounded-sm"
+              >
                 <svg
                   width="24"
                   height="24"

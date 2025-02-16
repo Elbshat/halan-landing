@@ -20,31 +20,31 @@ function MobileNav({ className, setIsMobileMenuOpen }) {
         >
           <button
             onClick={() => handleClick("about")}
-            className="transition-colors hover:text-primary"
+            className="rounded transition-colors hover:text-primary"
           >
             About Us
           </button>
           <button
             onClick={() => handleClick("menu")}
-            className="transition-colors hover:text-primary"
+            className="rounded transition-colors hover:text-primary"
           >
             Menu
           </button>
           <button
             onClick={() => handleClick("services")}
-            className="transition-colors hover:text-primary"
+            className="rounded transition-colors hover:text-primary"
           >
             Services
           </button>
           <button
             onClick={() => handleClick("howToWork")}
-            className="transition-colors hover:text-primary"
+            className="rounded transition-colors hover:text-primary"
           >
             How to Work?
           </button>
           <button
             onClick={() => handleClick("downloadApp")}
-            className="transition-colors hover:text-primary"
+            className="rounded transition-colors hover:text-primary"
           >
             Download App
           </button>
@@ -53,7 +53,7 @@ function MobileNav({ className, setIsMobileMenuOpen }) {
         <div className="mx-auto grid max-w-[296px]">
           <Link
             href="/contactUs"
-            className="focus-visible:ring-ring inline-flex h-10 items-center justify-center whitespace-nowrap rounded-full bg-primary px-4 font-poppins text-white shadow transition hover:bg-primary/95 hover:shadow-md focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-50 md:h-12 lg:h-14 lg:px-8 lg:text-xl"
+            className="inline-flex h-10 items-center justify-center whitespace-nowrap rounded-full bg-primary px-4 font-poppins text-white shadow transition hover:bg-primary/95 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50 md:h-12 lg:h-14 lg:px-8 lg:text-xl"
           >
             <span
               onClick={() => setIsMobileMenuOpen(false)}
