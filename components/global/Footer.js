@@ -31,13 +31,16 @@ function Footer() {
             <li>
               <button
                 onClick={() => scrollToSection("about")}
-                className="rounded"
+                className="rounded transition-colors hover:text-primary"
               >
                 About Us
               </button>
             </li>
             <li>
-              <Link href="/" className="rounded">
+              <Link
+                href="/"
+                className="rounded transition-colors hover:text-primary"
+              >
                 Category
               </Link>
             </li>
@@ -49,12 +52,18 @@ function Footer() {
           </h4>
           <ul className="space-y-2 font-medium text-[#333333] md:leading-[30px]">
             <li>
-              <Link href="/" className="rounded">
+              <Link
+                href="/"
+                className="rounded transition-colors hover:text-primary"
+              >
                 Why Halan Halal?
               </Link>
             </li>
             <li>
-              <Link href="/faqs" className="rounded">
+              <Link
+                href="/faqs"
+                className="rounded transition-colors hover:text-primary"
+              >
                 FAQ
               </Link>
             </li>
@@ -66,17 +75,26 @@ function Footer() {
           </h4>
           <ul className="space-y-2 font-medium text-[#333333] md:leading-[30px]">
             <li>
-              <Link href="/" className="rounded">
+              <Link
+                href="/"
+                className="rounded transition-colors hover:text-primary"
+              >
                 Feedback
               </Link>
             </li>
             <li>
-              <Link href="/contactUs" className="rounded">
+              <Link
+                href="/contactUs"
+                className="rounded transition-colors hover:text-primary"
+              >
                 Contact Us
               </Link>
             </li>
             <li>
-              <Link href="/privacy-policy" className="rounded">
+              <Link
+                href="/privacy-policy"
+                className="rounded transition-colors hover:text-primary"
+              >
                 Privacy Policy
               </Link>
             </li>
@@ -90,7 +108,7 @@ function Footer() {
             <li>
               <Link
                 href="/"
-                className="flex items-center justify-center rounded-sm"
+                className="flex items-center justify-center rounded-sm transition-transform hover:scale-125"
               >
                 <svg
                   width="24"
@@ -113,7 +131,7 @@ function Footer() {
             <li>
               <Link
                 href="/"
-                className="flex items-center justify-center rounded-sm"
+                className="flex items-center justify-center rounded-sm transition-transform hover:scale-125"
               >
                 <svg
                   width="24"
@@ -132,7 +150,7 @@ function Footer() {
             <li>
               <Link
                 href="/"
-                className="flex items-center justify-center rounded-sm"
+                className="flex items-center justify-center rounded-sm transition-transform hover:scale-125"
               >
                 <svg
                   width="24"
