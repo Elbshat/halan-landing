@@ -7,7 +7,7 @@ export const metadata = {
 };
 function ContactUsPage() {
   return (
-    <main className="mt-32 font-jakarta md:font-dmSans lg:mt-40">
+    <main className="mt-32 lg:mt-40">
       <header className="mb-10 space-y-6 px-4 text-center md:mb-16">
         <h1 className="text-2xl font-extrabold md:text-[45px] md:font-bold md:leading-[60px]">
           Contact Us

@@ -15,7 +15,7 @@ function Accordion({ items }) {
   };
 
   return (
-    <section className="mx-auto max-w-[1368px] space-y-4 rounded-2xl bg-white p-4 md:p-10">
+    <section className="shadow-accordion mx-auto max-w-[1368px] space-y-4 rounded-2xl bg-white p-4 md:p-10">
       {items.map((item, index) => (
         <div
           key={index}

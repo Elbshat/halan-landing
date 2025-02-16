@@ -39,9 +39,9 @@ function ContactForm() {
 
       <button
         type="submit"
-        className="inline-flex h-14 w-full items-center justify-center gap-x-2 whitespace-nowrap rounded-full bg-primary px-8 text-xl font-medium text-white shadow transition hover:bg-primary/95 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50"
+        className="inline-flex h-14 w-full items-center justify-center gap-x-2 whitespace-nowrap rounded-full bg-primary px-8 font-poppins text-xl font-medium text-white shadow transition hover:bg-primary/95 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:pointer-events-none disabled:opacity-50"
       >
-        send
+        Send
       </button>
     </form>
   );

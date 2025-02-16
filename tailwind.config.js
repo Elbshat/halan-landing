@@ -22,6 +22,7 @@ module.exports = {
           "0 4px 32px 0px rgba(19, 24, 27, 0.03), 0 24px 32px -8px rgba(19, 24, 27, 0.03)",
         article: "0 52.2px 83.5px -31.3px rgba(35,149,73,0.2) ",
         light: "0 2px 16px rgba(64, 103, 176, 0.12)",
+        accordion: "0 3px 60px 0 rgba(19, 24, 27, 0.08)",
       },
       fontFamily: {
         openSans: ["var(--font-open-sans)", "Arial", "sans-serif"],

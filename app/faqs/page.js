@@ -8,7 +8,7 @@ export const metadata = {
 };
 function FAQsPage() {
   return (
-    <main className="mt-32 px-4 font-jakarta md:font-dmSans lg:mt-40">
+    <main className="mt-32 px-4 lg:mt-40">
       <header className="mb-6 space-y-6 text-center md:mb-20">
         <h1 className="text-2xl font-extrabold md:text-[45px] md:font-bold md:leading-[60px]">
           Questions Looks Here
