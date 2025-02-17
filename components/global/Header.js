@@ -5,13 +5,11 @@ import LogoIcon from "../icons/LogoIcon";
 import PhoneIcon from "../icons/PhoneIcon";
 import MobileNav from "./MobileNav";
 import useScroll from "@/hooks/useScroll";
-import { usePathname, useRouter } from "next/navigation";
 
 function Header() {
-  const [scroll, setScroll] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const pathname = usePathname();
-  const router = useRouter();
+
   const { scrollToSection } = useScroll();
 
   const toggleMobileMenu = () => {
@@ -21,37 +19,12 @@ function Header() {
     isMobileMenuOpen ? "translate-y-0 " : " -translate-y-[105%]"
   }`;
 
-  const scrolling = async (id) => {
-    if (pathname !== "/") {
-      new Promise((resolve, reject) => {
-        router.push("/");
-        resolve();
-      }).then(() => {
-        console.log(pathname);
-        if (pathname === "/") {
-          const element = document.getElementById(id);
-          console.log(element);
-          element?.scrollIntoView({
-            behavior: "smooth",
-            inline: "nearest",
-          });
-        }
-      });
-    } else {
-      const element = document.getElementById(id);
-      element?.scrollIntoView({
-        behavior: "smooth",
-        inline: "nearest",
-      });
-    }
-  };
-
   useEffect(() => {
-    window.addEventListener("scroll", () => setScroll(window.scrollY > 50));
+    window.addEventListener("scroll", () => setScrolled(window.scrollY > 50));
 
     return () => {
       window.removeEventListener("scroll", () =>
-        setScroll(window.scrollY > 50),
+        setScrolled(window.scrollY > 50),
       );
     };
   }, []);
@@ -59,7 +32,7 @@ function Header() {
   return (
     <header
       className={`fixed top-0 z-40 h-[88px] w-full border-b transition lg:h-[120px] ${
-        scroll || isMobileMenuOpen
+        scrolled || isMobileMenuOpen
           ? "border-gray-200 bg-white shadow-header"
           : "border-transparent bg-background"
       }`}
@@ -70,7 +43,7 @@ function Header() {
             ? "border-gray-200 bg-white shadow-header"
             : "border-transparent bg-background"
         } ${
-          scroll
+          scrolled
             ? "border-gray-200 bg-white"
             : "border-transparent bg-background"
         } `}
@@ -91,8 +64,7 @@ function Header() {
           className="hidden items-center gap-3 font-bold leading-[1.4] text-nav min-[840px]:flex lg:gap-4 lg:text-[18px] lg:font-semibold xl:gap-6"
         >
           <button
-            // onClick={() => scrollToSection("about")}
-            onClick={() => scrolling("about")}
+            onClick={() => scrollToSection("about")}
             className="rounded transition-colors hover:text-primary"
           >
             About Us
