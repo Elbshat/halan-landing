@@ -1,14 +1,15 @@
 import { useRouter, usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 
 export default function useScroll() {
-  const [targetId, setTargetId] = useState(null);
   const router = useRouter();
   const pathname = usePathname();
 
+  let targetIdRef = useRef(null);
+
   const scrollToSection = (id) => {
     if (pathname !== "/") {
-      setTargetId(id);
+      targetIdRef.current = id;
       router.push("/");
     } else {
       scrollTo(id);
@@ -24,11 +25,10 @@ export default function useScroll() {
   };
 
   useEffect(() => {
-    if (targetId) {
-      scrollTo(targetId);
-      setTargetId(null);
+    if (targetIdRef.current) {
+      scrollTo(targetIdRef.current);
+      targetIdRef.current = null;
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
   return { scrollToSection };
 }

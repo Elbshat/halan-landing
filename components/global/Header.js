@@ -5,10 +5,13 @@ import LogoIcon from "../icons/LogoIcon";
 import PhoneIcon from "../icons/PhoneIcon";
 import MobileNav from "./MobileNav";
 import useScroll from "@/hooks/useScroll";
+import { usePathname, useRouter } from "next/navigation";
 
 function Header() {
   const [scroll, setScroll] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
   const { scrollToSection } = useScroll();
 
   const toggleMobileMenu = () => {
@@ -17,6 +20,31 @@ function Header() {
   const mobileMenuClasses = `absolute top-full duration-500 left-0 w-full -z-10 bg-white min-[840px]:hidden transition-transform ease-out rounded-b-[4rem]  ${
     isMobileMenuOpen ? "translate-y-0 " : " -translate-y-[105%]"
   }`;
+
+  const scrolling = async (id) => {
+    if (pathname !== "/") {
+      new Promise((resolve, reject) => {
+        router.push("/");
+        resolve();
+      }).then(() => {
+        console.log(pathname);
+        if (pathname === "/") {
+          const element = document.getElementById(id);
+          console.log(element);
+          element?.scrollIntoView({
+            behavior: "smooth",
+            inline: "nearest",
+          });
+        }
+      });
+    } else {
+      const element = document.getElementById(id);
+      element?.scrollIntoView({
+        behavior: "smooth",
+        inline: "nearest",
+      });
+    }
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", () => setScroll(window.scrollY > 50));
@@ -63,7 +91,8 @@ function Header() {
           className="hidden items-center gap-3 font-bold leading-[1.4] text-nav min-[840px]:flex lg:gap-4 lg:text-[18px] lg:font-semibold xl:gap-6"
         >
           <button
-            onClick={() => scrollToSection("about")}
+            // onClick={() => scrollToSection("about")}
+            onClick={() => scrolling("about")}
             className="rounded transition-colors hover:text-primary"
           >
             About Us
