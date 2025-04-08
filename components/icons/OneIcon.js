@@ -23,7 +23,7 @@ export default function OneIcon(props) {
           rx={20.88}
           transform="rotate(15 27.354 0)"
         />
-        <g clipPath="url(#a)">
+        <g clipPath="url(#oneIcon)">
           <path
             fill="#FFB35C"
             d="M61.938 57.306h-2.899v2.898h2.899a1.45 1.45 0 0 0 0-2.898ZM61.938 67.451h-2.899v2.899h2.899a1.45 1.45 0 1 0 0-2.899Z"
@@ -38,7 +38,7 @@ export default function OneIcon(props) {
           />
         </g>
         <defs>
-          <clipPath id="a">
+          <clipPath id="oneIcon">
             <path fill="#fff" d="M40.006 39.671h48.023v48.023H40.006z" />
           </clipPath>
         </defs>

@@ -7,7 +7,7 @@ const TenPercentOffIcon = (props) => (
     {...props}
   >
     <mask
-      id="a"
+      id="tenPercentOffIcon"
       width={90}
       height={62}
       x={0}
@@ -19,7 +19,7 @@ const TenPercentOffIcon = (props) => (
     >
       <path fill="#fff" d="M0 0h89.333v61.333H0V0Z" />
     </mask>
-    <g mask="url(#a)">
+    <g mask="url(#tenPercentOffIcon)">
       <mask
         id="b"
         width={98}

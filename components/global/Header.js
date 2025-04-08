@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
@@ -49,7 +50,9 @@ function Header() {
         } `}
       >
         <Link href="/" className="flex items-center gap-x-3 rounded lg:gap-x-5">
-          <LogoIcon className="md:h-w-12 h-10 w-10 md:w-12 lg:h-[72px] lg:w-[72px]" />
+          <div>
+            <img src="/logo.svg" alt="logo" />
+          </div>
           <h1
             className={`font-bold leading-[22.4px] lg:text-2xl ${
               isMobileMenuOpen ? "hidden" : ""

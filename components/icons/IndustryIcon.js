@@ -24,7 +24,7 @@ export default function IndustryIcon(props) {
           fill="#FFE8C8"
           rx={20.88}
         />
-        <g clipPath="url(#a)">
+        <g clipPath="url(#IndustryIcon)">
           <path
             fill="#4067B0"
             d="M54.815 90.513H35.3c-.98 0-1.774-.794-1.774-1.774V67.452c0-.98.795-1.774 1.774-1.774h19.514c.98 0 1.774.794 1.774 1.774v21.287c0 .98-.794 1.774-1.774 1.774Z"
@@ -97,7 +97,7 @@ export default function IndustryIcon(props) {
           <path fill="#FFA900" d="M74.326 79.87H76.1v10.643h-1.774V79.869Z" />
         </g>
         <defs>
-          <clipPath id="a">
+          <clipPath id="IndustryIcon">
             <path fill="#fff" d="M33.408 30.276H93.96v60.55H33.41z" />
           </clipPath>
         </defs>

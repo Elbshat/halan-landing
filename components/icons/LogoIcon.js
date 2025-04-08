@@ -12,7 +12,7 @@ const LogoIcon = (props) => {
           fill="#fff"
         />
         <mask
-          id="a"
+          id="LogoIcon"
           style={{
             maskType: "luminance",
           }}
@@ -27,7 +27,7 @@ const LogoIcon = (props) => {
             fill="#fff"
           />
         </mask>
-        <g mask="url(#a)">
+        <g mask="url(#LogoIcon)">
           <path
             fillRule="evenodd"
             clipRule="evenodd"
