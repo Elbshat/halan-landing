@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import Link from "next/link";
 import LogoIcon from "../icons/LogoIcon";
@@ -14,7 +15,9 @@ function Footer() {
             href="/"
             className="mb-6 flex items-center gap-x-5 rounded max-lg:justify-center"
           >
-            <LogoIcon className="h-10 w-10 md:h-[72px] md:w-[72px]" />
+            <div>
+              <img src="/logo.svg" alt="logo" />
+            </div>
             <h3 className="text-2xl font-bold leading-[22.4px]">Halan Halal</h3>
           </Link>
           <p className="font-bold leading-[30px] text-[#0c0020] lg:font-medium lg:text-[#333333]">
