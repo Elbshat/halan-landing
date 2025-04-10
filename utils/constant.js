@@ -1,3 +1,5 @@
+export const baseUrl = "https://halanhalal.com";
+
 export const menuItems = [
   { src: "/beef.png", label: "beef", price: "20.00", discount: 10 },
   { src: "/poultry.png", label: "poultry", price: "20.00", discount: 10 },
