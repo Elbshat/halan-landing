@@ -17,7 +17,7 @@ function PrivacyPolicyPage() {
           that your information is used in a secure and responsible manner.
         </p>
       </header>
-      <article className="shadow-accordion mx-auto max-w-[1368px] space-y-4 rounded-2xl bg-white p-4 md:p-10">
+      <article className="mx-auto max-w-[1368px] space-y-4 rounded-2xl bg-white p-4 shadow-accordion md:p-10">
         <section>
           <h2 className="font-bold">Information Collection</h2>
           <p>

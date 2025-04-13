@@ -70,6 +70,22 @@ function Footer() {
                 FAQ
               </Link>
             </li>
+            <li>
+              <Link
+                href="/terms-and-conditions"
+                className="rounded transition-colors hover:text-primary"
+              >
+                Terms & Conditions
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/privacy-policy"
+                className="rounded transition-colors hover:text-primary"
+              >
+                Privacy Policy
+              </Link>
+            </li>
           </ul>
         </section>
         <section className="space-y-6 max-lg:text-center">
@@ -91,14 +107,6 @@ function Footer() {
                 className="rounded transition-colors hover:text-primary"
               >
                 Contact Us
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/privacy-policy"
-                className="rounded transition-colors hover:text-primary"
-              >
-                Privacy Policy
               </Link>
             </li>
           </ul>

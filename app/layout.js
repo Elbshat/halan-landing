@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
-        className={` ${poppins.variable} ${dmSans.variable} ${openSans.variable} ${nunito.variable} bg-background font-dmSans text-black antialiased`}
+        className={` ${poppins.variable} ${dmSans.variable} ${openSans.variable} ${nunito.variable} flex min-h-screen flex-col justify-between bg-background font-dmSans text-black antialiased`}
       >
         <Script
           id="jsonLdSchema"
