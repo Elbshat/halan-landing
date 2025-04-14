@@ -4,6 +4,7 @@ import { baseUrl } from "@/utils/constant";
 export async function submitContactForm(formData) {
   const payload = {
     name: formData.name,
+    phone: formData.phone,
     email: formData.email,
     source: "web",
     subject: formData.subject,
@@ -23,13 +24,11 @@ export async function submitContactForm(formData) {
     if (!res.ok) {
       return {
         success: false,
-        message: "Failed to submit form",
+        message: "Failed to submit",
       };
     }
 
     const data = await res.json();
-
-    console.log("Contact form submitted:", formData);
 
     return {
       success: true,

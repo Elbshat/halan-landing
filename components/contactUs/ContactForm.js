@@ -10,7 +10,7 @@ function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phoneNumber: "",
+    phone: "",
     subject: "",
     message: "",
   });
@@ -73,7 +73,7 @@ function ContactForm() {
           // Reset form after successful submission
           setFormData({
             name: "",
-            phoneNumber: "",
+            phone: "",
             subject: "",
             message: "",
             email: "",
@@ -141,13 +141,13 @@ function ContactForm() {
         <FormInput
           label="Phone Number"
           type="tel"
-          name="phoneNumber"
+          name="phone"
           placeholder="Enter your phone number"
           className="w-full"
-          value={formData.phoneNumber}
+          value={formData.phone}
           onChange={handleChange}
           disabled={isSubmitting}
-          message={errors.phoneNumber}
+          message={errors.phone}
         />
 
         <FormInput
@@ -182,7 +182,7 @@ function ContactForm() {
         >
           {isSubmitting ? (
             <>
-              <span className="mr-2 size-5 animate-spin rounded-full border-b-2 border-r-2" />
+              <div className="mr-2 size-5 animate-spin rounded-full border-2 border-white border-r-transparent" />
               <span>submitting...</span>
             </>
           ) : (

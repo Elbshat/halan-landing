@@ -3,7 +3,7 @@ export const contactValidationPatterns = {
     pattern: /^[a-zA-Z][a-zA-Z\-'. ]*[a-zA-Z]$/,
     message: "Name must be at least 2 real characters",
   },
-  phoneNumber: {
+  phone: {
     // (123) 456-7890 / 123-456-7890 / 123.456.7890 / 1234567890 / 1-123-456-7890
     pattern: /^1?[-. ]?(\(\d{3}\)|\d{3})[-. ]?\d{3}[-. ]?\d{4}$/,
     message: "Phone number must be 10 digits",
