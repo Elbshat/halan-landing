@@ -12,7 +12,7 @@ export async function submitContactForm(formData) {
   };
 
   try {
-    const res = await fetch(`${baseUrl}/api/v1/contact`, {
+    const res = await fetch(`${baseUrl}/contact`, {
       method: "POST",
 
       headers: {

@@ -1,4 +1,4 @@
-export const baseUrl = "https://halanhalal.com";
+export const baseUrl = "https://halanhalal.com/api/v1";
 
 export const menuItems = [
   { src: "/beef.png", label: "beef", price: "20.00", discount: 10 },
