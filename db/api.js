@@ -1,4 +1,5 @@
-const baseUrl = "https://halanhalal.com/api/v1";
+import { baseUrl } from "@/utils/constant";
+
 export async function getTermsAndConditions() {
   const res = await fetch(`${baseUrl}/terms-and-conditions`);
 
