@@ -35,9 +35,9 @@ function RatingComponent({ rating }) {
   ));
 
   return (
-    <div className="flex items-center gap-3 min-h-8 font-medium">
-      <span className=" flex items-center gap-2 mb-1">{stars}</span>
-      {rating.replace(".", ",")}
+    <div className="flex min-h-8 items-center gap-3 font-medium">
+      <span className="mb-1 flex items-center gap-2">{stars}</span>
+      {rating.includes(".") ? rating.replace(".", ",") : rating}
     </div>
   );
 }

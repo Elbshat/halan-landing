@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import RatingComponent from "../global/RatingComponent";
 
 export default function TestimonialsCarousel({ slides, ref }) {
@@ -9,9 +10,10 @@ export default function TestimonialsCarousel({ slides, ref }) {
           {slides.map((item, i) => (
             <TestimonialItem
               key={i}
-              name={item.name}
+              name={item.fullName}
               rating={item.rating}
-              quote={item.quote}
+              description={item.description}
+              image={item.image}
             />
           ))}
         </div>
@@ -20,20 +22,28 @@ export default function TestimonialsCarousel({ slides, ref }) {
   );
 }
 
-function TestimonialItem({ name, quote, rating }) {
+function TestimonialItem({ image, name, description, rating }) {
   return (
     <figure className="embla__slide embla__slide--testimonial rounded-lg bg-white px-6 py-4 font-poppins lg:py-10">
       <div aria-hidden className="mb-4 lg:mb-6">
-        <span className="inline-block h-[61px] w-[61px] rounded-full bg-[#90ACF7]"></span>
+        <Image
+          src={image}
+          alt="customer image"
+          width={61}
+          height={61}
+          className="rounded-full ring-2 ring-[#90acf7]"
+        />
       </div>
       <figcaption className="text-[26px] font-medium leading-9">
         {name}
       </figcaption>
 
-      <RatingComponent rating={rating} />
+      <RatingComponent rating={rating.toString()} />
 
       <blockquote className="mt-4 text-[#575757] lg:mt-6">
-        <p className="text-[18px] tracking-tight">{quote}</p>
+        <p className="text-[18px] tracking-tight">
+          &ldquo;{description}&rdquo;
+        </p>
       </blockquote>
     </figure>
   );
