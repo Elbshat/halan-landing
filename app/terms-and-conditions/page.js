@@ -1,3 +1,4 @@
+import ParsedContent from "@/components/global/ParsedContent";
 import { getTermsAndConditions } from "@/db/api";
 import { notFound } from "next/navigation";
 
@@ -25,8 +26,8 @@ async function TermsAndConditionsPage() {
       <article className="mx-auto max-w-[1368px] space-y-4 rounded-2xl bg-white p-4 shadow-accordion md:p-10">
         {data?.map((item) => (
           <section key={item._id}>
-            <h2 className="font-bold">{item.name.en}</h2>
-            <p>{item.description.en}</p>
+            <ParsedContent className="font-bold" htmlContent={item.name.en} />
+            <ParsedContent htmlContent={item.description.en} />
           </section>
         ))}
       </article>

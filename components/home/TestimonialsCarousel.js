@@ -45,7 +45,7 @@ function TestimonialItem({ image, name, description, rating }) {
 
       <blockquote className="mt-4 text-[#575757] lg:mt-6">
         <div className="max-h-80 overflow-y-auto text-[18px] tracking-tight">
-          <ParsedContent htmlContent={description} />
+          <ParsedContent variant="testimonial" htmlContent={description} />
         </div>
       </blockquote>
     </figure>

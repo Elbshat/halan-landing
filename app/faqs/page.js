@@ -23,7 +23,7 @@ async function FAQsPage() {
           industry. Lorem Ipsum has been the{" "}
         </p>
       </header>
-      <Accordion items={accordionItems} />
+      <Accordion items={data} />
     </main>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import ParsedContent from "../global/ParsedContent";
 
 function Accordion({ items }) {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -15,15 +16,17 @@ function Accordion({ items }) {
   };
 
   return (
-    <section className="shadow-accordion mx-auto max-w-[1368px] space-y-4 rounded-2xl bg-white p-4 md:p-10">
+    <section className="mx-auto max-w-[1368px] space-y-4 rounded-2xl bg-white p-4 shadow-accordion md:p-10">
       {items.map((item, index) => (
         <div
-          key={index}
+          key={item._id}
           className="cursor-pointer space-y-2 overflow-hidden rounded-lg border border-[#DBDFD0] px-4 pt-2 transition-all duration-300 ease-in-out md:space-y-4 md:px-10 md:pt-6"
           onClick={() => handleClick(index)}
         >
           <div className="flex items-center justify-between">
-            <h3 className="text-xl font-bold">{item.title}</h3>
+            <h3 className="text-xl font-bold">
+              <ParsedContent htmlContent={item.question.en} />
+            </h3>
             <span className="text-2xl">
               {activeIndex === index ? "-" : "+"}
             </span>
@@ -39,12 +42,12 @@ function Accordion({ items }) {
               overflow: "hidden", // Important for smooth transitions
             }}
           >
-            <p
-              className="pb-2 text-[#4f4f4f] md:pb-6"
-              ref={(el) => (contentRefs.current[index] = el)}
-            >
-              {item.content}
-            </p>
+            <div ref={(el) => (contentRefs.current[index] = el)}>
+              <ParsedContent
+                className="pb-2 text-[#4f4f4f] md:pb-6"
+                htmlContent={item.answer.en}
+              />
+            </div>
           </div>
         </div>
       ))}
