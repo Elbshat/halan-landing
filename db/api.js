@@ -2,7 +2,7 @@ import { baseUrl } from "@/utils/constant";
 
 export async function getTermsAndConditions() {
   const res = await fetch(`${baseUrl}/terms-and-conditions`, {
-    next: { revalidate: 2_592_000 }, // 60 * 60 * 24 * 30
+    cache: "no-store",
   });
 
   if (!res.ok) {
@@ -14,9 +14,37 @@ export async function getTermsAndConditions() {
   return data;
 }
 
+export async function getPrivacyPolicy() {
+  const res = await fetch(`${baseUrl}/privacy-policy`, {
+    cache: "no-store",
+  });
+
+  if (!res.ok) {
+    throw new Error("Privacy Policy not Found");
+  }
+
+  const { data } = await res.json();
+
+  return data;
+}
+
+export async function getFAQ() {
+  const res = await fetch(`${baseUrl}/faq`, {
+    cache: "no-store",
+  });
+
+  if (!res.ok) {
+    throw new Error("Frequently Asked Questions not Found");
+  }
+
+  const { data } = await res.json();
+
+  return data;
+}
+
 export async function getTestimonials() {
   const res = await fetch(`${baseUrl}/testimonials`, {
-    next: { revalidate: 2_592_000 }, // 60 * 60 * 24 * 30
+    cache: "no-store",
   });
 
   if (!res.ok) {
@@ -25,5 +53,5 @@ export async function getTestimonials() {
 
   const { data } = await res.json();
 
-  return data.data.slice(0, 5);
+  return data.data;
 }

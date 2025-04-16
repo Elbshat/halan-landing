@@ -35,6 +35,8 @@
     @apply text-xl font-medium leading-8 text-black/80 md:text-[22px] md:leading-normal;
   }
 
+  /* Carousel Styles */
+
   .embla {
     overflow: hidden;
   }
@@ -69,11 +71,77 @@
     opacity: 0.5;
   }
 
+  /* Contact Us Map background */
+
   .map__overlay {
     background: linear-gradient(
       180deg,
       #f9f9f4 15%,
       rgba(255, 255, 255, 0.5) 15%
     );
+  }
+
+  /* HTML Parser */
+  .parsed-html-content h1 {
+    @apply my-4 text-2xl font-bold;
+  }
+
+  .parsed-html-content h2 {
+    @apply my-3 text-xl font-bold;
+  }
+
+  .parsed-html-content h3 {
+    @apply my-2 text-lg font-bold;
+  }
+
+  .parsed-html-content p {
+    @apply my-3 leading-relaxed;
+  }
+
+  .parsed-html-content ul {
+    @apply my-3 list-disc pl-5;
+  }
+
+  .parsed-html-content ol {
+    @apply my-3 list-decimal pl-5;
+  }
+
+  .parsed-html-content a {
+    @apply text-blue-600 underline;
+  }
+
+  .parsed-html-content strong,
+  .parsed-html-content b {
+    @apply font-bold;
+  }
+
+  .parsed-html-content em,
+  .parsed-html-content i {
+    @apply italic;
+  }
+
+  .parsed-html-content blockquote {
+    @apply my-4 border-l-4 border-gray-300 pl-4 italic;
+  }
+
+  .parsed-html-content code {
+    @apply rounded bg-gray-100 px-1 py-0.5 text-sm;
+  }
+
+  .parsed-html-content pre {
+    @apply my-4 overflow-x-auto rounded bg-gray-100 p-3;
+  }
+
+  .parsed-html-content table {
+    @apply my-4 w-full border-collapse;
+  }
+
+  .parsed-html-content th,
+  .parsed-html-content td {
+    @apply border border-gray-300 p-2;
+  }
+
+  .parsed-html-content img {
+    @apply my-4 h-auto max-w-full;
   }
 }

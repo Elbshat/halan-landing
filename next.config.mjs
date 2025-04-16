@@ -6,6 +6,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "i.pravatar.cc",
       },
+      {
+        protocol: "https",
+        hostname: "public-halan-halal-bucket.s3.us-east-1.amazonaws.com",
+      },
     ],
   },
 };

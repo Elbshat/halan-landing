@@ -1,4 +1,5 @@
 import Accordion from "@/components/faqs/Accordion";
+import { getFAQ } from "@/db/api";
 import { accordionItems } from "@/utils/constant";
 
 export const metadata = {
@@ -6,7 +7,10 @@ export const metadata = {
   description:
     "Find answers to common questions about Halan Halal's products and services. Learn more about our commitment to providing high-quality halal food.",
 };
-function FAQsPage() {
+async function FAQsPage() {
+  const data = await getFAQ();
+  if (!data) return notFound();
+
   return (
     <main className="mt-32 px-4 lg:mt-40">
       <header className="mb-6 space-y-6 text-center md:mb-20">

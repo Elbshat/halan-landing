@@ -1,9 +1,14 @@
+import { getPrivacyPolicy } from "@/db/api";
+
 export const metadata = {
   title: "Privacy Policy",
   description:
     "Learn how we protect your personal information and ensure your privacy on our halal food website. Our comprehensive privacy policy details data collection, usage, and security measures to keep your information safe and confidential. Trust us to handle your data responsibly.",
 };
-function PrivacyPolicyPage() {
+async function PrivacyPolicyPage() {
+  const data = await getPrivacyPolicy();
+  if (!data) return notFound();
+
   return (
     <main className="mt-32 px-4 lg:mt-40">
       <header className="mb-6 space-y-6 text-center md:mb-20">
