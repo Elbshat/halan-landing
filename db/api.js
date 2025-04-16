@@ -11,7 +11,9 @@ export async function getTermsAndConditions() {
 
   const { data } = await res.json();
 
-  return data;
+  const activeTerms = data.filter((item) => item.isActive === true);
+
+  return activeTerms;
 }
 
 export async function getPrivacyPolicy() {
@@ -24,8 +26,9 @@ export async function getPrivacyPolicy() {
   }
 
   const { data } = await res.json();
+  const activePrivacyPolicy = data.filter((item) => item.isActive === true);
 
-  return data;
+  return activePrivacyPolicy;
 }
 
 export async function getFAQ() {
@@ -38,8 +41,9 @@ export async function getFAQ() {
   }
 
   const { data } = await res.json();
+  const activeFaq = data.filter((item) => item.isActive === true);
 
-  return data;
+  return activeFaq;
 }
 
 export async function getTestimonials() {
